@@ -4,33 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Generator</title>
+    <title>BMI Calculator </title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
 
 <body>
     <div class="container">
-        <h1>BMI Generator</h1>
-        <form id="hello">
-            <p>
+        <form id="card">
+            <h1>BMI Calculator </h1>
+            <div class="inputs">
+            <p class="hight">
                 <label>Height in CM : </label>
                 <input type="text" id="height">
             </p>
-            <p>
+            <p class="hight">
                 <label>Weigth in KG : </label>
                 <input type="text" id="Width">
             </p>
-            <button>Calculate</button>
+            </div>
+            <button>Calculate BMI</button>
+            <h5>Your BMI</h5>
             <div class="result"></div>
-            <div class="width-guide">
-                <h3>BIM width guide</h3>
-                <p> Underweight: Less than 18.5</p>
-                <p>Healthy weight: 18.5 to 24.9</p>
-                <p>Overweight: 25.0 to 29.9</p>
+            <div class="comm">
+                <p>Comment : You are  </p>
+                <p class="contains"></p>
             </div>
         </form>
     </div>
 </body>
-
 </html>

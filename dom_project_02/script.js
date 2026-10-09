@@ -4,6 +4,7 @@ form.addEventListener('submit', function(e) {
     const heigth = parseInt(document.querySelector("#height").value);
     const width = parseInt(document.querySelector("#Width").value);
     const results = document.querySelector(".result");
+    const contains = document.querySelector(".contains");
     if (heigth === '' || heigth < 0 || isNaN(heigth)) {
         results.innerHTML = `"Please give a valid height" ${heigth}`
     } else if(width === '' || width < 0 || isNaN(width)) {
@@ -14,13 +15,13 @@ form.addEventListener('submit', function(e) {
         // show the result
         results.innerHTML = `<span>${BMI}</span>`;
         if (BMI < 18.5 ) {
-                results.innerHTML = `Underweight : <span>${BMI}</span> `;
+                contains.innerHTML = ` Underweight`;
             }
             else if (BMI > 18.5 && BMI < 24.9) {
-                results.innerHTML = `Healthy weigh : <span>${BMI}</span> `;
+                contains.innerHTML = ` Healthy weigh`;
             }
             else{
-                results.innerHTML = `Overweight : <span>${BMI}</span> `;
+                contains.innerHTML = ` Overweight`;
             }
     }
 })
