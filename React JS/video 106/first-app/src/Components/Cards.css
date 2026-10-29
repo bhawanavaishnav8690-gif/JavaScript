@@ -1,0 +1,11 @@
+.Card{
+    width: 30vw;
+    border: 2px solid black;
+    text-align: center;
+    overflow: hidden;
+    margin: 20px;
+}
+h1{
+    background: #000;
+    color: white;
+}
